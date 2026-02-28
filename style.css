@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #192b79, #150a21);
+    color: white;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(0,0,0,0.3);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    opacity: 0.7;
+}
+
+/* HERO */
+.hero {
+    padding: 100px 20px;
+}
+
+.foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: white;
+    color: #764ba2;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ddd;
+}
+
+/* ABOUT */
+.about {
+    background: white;
+    color: #333;
+    padding: 60px 20px;
+}
+
+/* PROJECTS */
+.projects {
+    background: white;
+    color: #333;
+    padding: 60px 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    position: relative;
+    width: 280px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.project-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.project-item:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.project-item:hover .overlay {
+    opacity: 1;
+}
+
+/* CONTACT */
+.contact {
+    background: #222;
+    padding: 60px 20px;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    background: #111;
+}
+
+/* ANIMASI */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
