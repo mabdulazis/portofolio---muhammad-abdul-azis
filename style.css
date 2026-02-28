@@ -129,9 +129,38 @@ footer {
     padding: 20px;
     background: #111;
 }
+/* RESPONSIVE MOBILE */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-item,
+    .photo-card {
+        width: 90%;
+    }
+
+    .foto {
+        width: 120px;
+        height: 120px;
+    }
+}
 
 /* ANIMASI */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+
 }
